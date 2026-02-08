@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary">NextWave</a>
+
+      <button class="navbar-toggler" (click)="toggleMenu()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" [class.show]="isOpen">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
+        </ul>
+        <button class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </nav>

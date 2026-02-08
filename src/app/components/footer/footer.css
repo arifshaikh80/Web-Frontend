@@ -1,0 +1,50 @@
+.footer-section {
+  background: #1f2937; /* dark blue */
+  color: #d1d5db;
+}
+
+.brand-text {
+  font-weight: bold;
+  font-size: 24px;
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-title {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #9ca3af;
+}
+
+.footer-list li:hover {
+  color: white;
+}
+
+.footer-divider {
+  border-color: #374151;
+  margin: 30px 0;
+}
+
+.social-icons i {
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #9ca3af;
+}
+
+.social-icons i:hover {
+  color: white;
+}

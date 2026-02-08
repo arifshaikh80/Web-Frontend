@@ -1,0 +1,25 @@
+.hero-section {
+  background: #f7f7ff;
+}
+
+.text-indigo {
+  color: #4f46e5;
+}
+
+/* Hall of Fame Card */
+.hall-card {
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  min-height: 300px;
+}
+
+/* Avatars */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.overlap {
+  margin-left: -10px;
+}

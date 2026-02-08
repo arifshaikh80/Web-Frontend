@@ -1,0 +1,70 @@
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">
+          <span class="text-dark">Build Skills.</span><br>
+          <span class="text-primary">Earn XP.</span><br>
+          <span class="text-indigo">Get Hired.</span>
+        </h1>
+
+        <p class="lead mt-3 text-muted">
+          NextWave combines professional networking with skill-building challenges.
+          Showcase your talents, learn from verified mentors, and connect with
+          companies looking for your exact skills.
+        </p>
+
+        <div class="d-flex gap-3 mt-4">
+          <button class="btn btn-primary btn-lg">Join as User</button>
+          <button class="btn btn-outline-primary btn-lg">Join as Mentor</button>
+          <button class="btn btn-light btn-lg border">Join as Company</button>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD -->
+      <div class="col-lg-6 text-center mt-5 mt-lg-0">
+        <div class="hall-card shadow-lg p-5 rounded-4">
+
+          <div class="mb-3">
+            🏆
+          </div>
+
+          <h3 class="text-white fw-bold">Hall of Fame</h3>
+          <p class="text-white-50">Top 1% of NextWave users</p>
+
+          <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="avatar">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="avatar overlap">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="avatar overlap">
+            <span class="text-white ms-2">+247 others</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TABS SECTION -->
+<div class="container mt-5">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <button class="nav-link" [class.active]="activeTab==='user'" (click)="changeTab('user')">Users</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" [class.active]="activeTab==='mentor'" (click)="changeTab('mentor')">Mentors</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" [class.active]="activeTab==='company'" (click)="changeTab('company')">Companies</button>
+    </li>
+  </ul>
+
+  <div class="border p-4">
+    <div *ngIf="activeTab==='user'">Create profile & earn XP</div>
+    <div *ngIf="activeTab==='mentor'">Create challenges & mentor users</div>
+    <div *ngIf="activeTab==='company'">Hire skilled talent</div>
+  </div>
+</div>
